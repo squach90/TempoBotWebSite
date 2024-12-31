@@ -321,3 +321,54 @@ footer {
   font-weight: bold;
   margin: 0;
 }
+
+.card-desktop {
+  position: relative;
+  height: 280px;
+  width: 300px;
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
+  box-shadow: 0 0 10px #0000001a;
+  background-color: #2f3a4b;
+  color: #ffffff;
+  margin: 10px;
+  border-radius: 5px;
+  grid-column-start: 2;
+  transition: box-shadow 0.2s ease; /* Ajouter une transition fluide pour l'ombre */
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    position: absolute;
+    top: 0; /* Positionner en haut */
+    right: 0;
+    transform: translateY(0); /* Supprimer la translation verticale */
+    transition: transform 0.2s ease; /* Ajouter une transition fluide pour le transform */
+  }
+
+  img:hover {
+    transform: translateY(-5%); /* Ajuster pour un effet de survol plus doux */
+  }
+
+  &:hover {
+    box-shadow: 0 0 20px #ffffff24; /* Ajuster l'ombre au survol */
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 17px;
+  }
+
+  p {
+    margin: 0;
+    opacity: 0.6;
+    font-size: 15px;
+  }
+}
+
+.container-desktop {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 8px;
+}
