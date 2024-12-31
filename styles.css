@@ -141,6 +141,7 @@ footer {
   width: 340px;
   border: 1px solid rgba(var(--color-text-rgb), 0.1);
   box-shadow: 0 0 10px #0000001a;
+  z-index: 1; /* Assurez-vous que l'image est au-dessus par défaut */
 
   img {
     width: 100%;
@@ -484,9 +485,6 @@ footer {
   margin-bottom: 10px;
 }
 
-.card,
-.card-large,
-.card-2,
 .paragraph {
   position: relative;
   overflow: hidden; /* Assurez-vous que l'effet d'onde ne dépasse pas les limites de l'élément */
