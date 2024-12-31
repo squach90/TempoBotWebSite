@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #12161d;
   color: #ffffff;
@@ -9,9 +13,13 @@ body {
 }
 
 .vide {
-  height: 2vh;
+  height: 4vh;
+  background-color: #232a3554;
+  display: flex;
+  align-items: center;
   p {
-    text-align: center;
+    text-align: left;
+    margin: 0 0 0 20px;
   }
 }
 
@@ -30,8 +38,57 @@ body {
   z-index: 1000; /* S'assurer qu'elle reste au-dessus */
 }
 
+#install {
+  margin-left: auto;
+}
+
 .button {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #34435840;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: #12161d 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
   text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: #aabacf;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 0.35s;
+}
+
+.button:active {
+  transform: translateY(2px);
+  transition-duration: 0.35s;
+}
+
+.button:hover {
+  box-shadow: rgba(39, 75, 174, 0.2) 0 6px 12px;
 }
 
 .content {
@@ -58,38 +115,100 @@ body {
 }
 
 .card-large {
+  position: relative;
   grid-row: span 2;
   grid-column: span 2;
-  background-color: #333;
+  background-color: #2f3a4b;
   color: #ffffff;
   margin: 10px;
-  padding: 10px;
   border-radius: 5px;
   grid-column-start: 1;
   width: 340px;
   border: 1px solid rgba(var(--color-text-rgb), 0.1);
   box-shadow: 0 0 10px #0000001a;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 17px;
+  }
+
+  p {
+    margin: 0;
+    opacity: 0.6;
+    font-size: 15px;
+  }
+}
+
+.text-card {
+  position: absolute; /* Ajouter cette ligne */
+  bottom: 16px; /* Ajouter cette ligne */
+  left: 16px; /* Ajouter cette ligne */
+  right: 16px; /* Ajouter cette ligne */
+  gap: 6px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
+  position: relative;
   height: 280px;
-  width: 340px;
+  width: 300px;
   border: 1px solid rgba(var(--color-text-rgb), 0.1);
   box-shadow: 0 0 10px #0000001a;
-  background-color: #333;
+  background-color: #2f3a4b;
   color: #ffffff;
   margin: 10px;
-  padding: 10px;
   border-radius: 5px;
   grid-column-start: 2;
 
-  .text-card {
-    left: 16px;
-    right: 16px;
-    bottom: 16px;
-    gap: 6px;
-    display: flex;
-    flex-direction: column;
+  img {
+    width: 72%;
+    object-fit: cover;
+    border-radius: 5px;
+    position: absolute; /* Ajouter cette ligne */
+    top: 50%; /* Centrer verticalement */
+    right: 0px; /* Positionner à droite */
+    transform: translateY(-50%); /* Ajuster pour centrer verticalement */
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 17px;
+  }
+
+  p {
+    margin: 0;
+    opacity: 0.6;
+    font-size: 15px;
+  }
+}
+
+.card-2 {
+  position: relative;
+  height: 280px;
+  width: 300px;
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
+  box-shadow: 0 0 10px #0000001a;
+  background-color: #2f3a4b;
+  color: #ffffff;
+  margin: 10px;
+  border-radius: 5px;
+  grid-column-start: 2;
+
+  img {
+    width: 98%;
+    object-fit: cover;
+    border-radius: 5px;
+    position: absolute; /* Ajouter cette ligne */
+    top: 50%; /* Centrer verticalement */
+    right: 0px; /* Positionner à droite */
+    transform: translateY(-50%); /* Ajuster pour centrer verticalement */
   }
 
   h2 {
