@@ -372,3 +372,114 @@ footer {
   grid-template-rows: repeat(1, 1fr);
   gap: 8px;
 }
+
+.card-ios {
+  position: relative;
+  height: 280px;
+  width: 300px;
+  border: 1px solid rgba(var(--color-text-rgb), 0.1);
+  box-shadow: 0 0 10px #0000001a;
+  background-color: #2f3a4b;
+  color: #ffffff;
+  margin: 10px;
+  border-radius: 5px;
+  grid-column-start: 2;
+  transition: box-shadow 0.2s ease; /* Ajouter une transition fluide pour l'ombre */
+
+  &:hover {
+    box-shadow: 0 0 20px #ffffff24; /* Ajuster l'ombre au survol */
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 17px;
+  }
+
+  p {
+    margin: 0;
+    opacity: 0.6;
+    font-size: 15px;
+  }
+}
+
+.card-img-appstore {
+  width: 60%;
+  object-fit: cover;
+  border-radius: 5px;
+  position: absolute;
+  top: 0; /* Positionner en haut */
+  left: 50%; /* Centrer horizontalement */
+  transform: translate(-50%, 0); /* Ajuster pour centrer horizontalement */
+  transition: transform 0.2s ease; /* Ajouter une transition fluide pour le transform */
+  margin-top: 10px;
+}
+
+.card-img-appstore:hover {
+  transform: translate(
+    -50%,
+    -5%
+  ); /* Ajuster pour un effet de survol plus doux */
+}
+
+.card-img-notifios {
+  width: 60%;
+  object-fit: cover;
+  border-radius: 5px;
+  position: absolute;
+  top: 0; /* Positionner en haut */
+  left: 50%; /* Centrer horizontalement */
+  transform: translate(-50%, 0); /* Ajuster pour centrer horizontalement */
+  transition: transform 0.2s ease; /* Ajouter une transition fluide pour le transform */
+  margin-top: 10px;
+}
+
+.card-img-notifios:hover {
+  transform: translate(
+    -50%,
+    -5%
+  ); /* Ajuster pour un effet de survol plus doux */
+}
+
+.card-img-topic {
+  width: 90%;
+  object-fit: cover;
+  border-radius: 5px;
+  position: absolute;
+  top: 0; /* Positionner en haut */
+  left: 50%; /* Centrer horizontalement */
+  transform: translate(-50%, 0); /* Ajuster pour centrer horizontalement */
+  transition: transform 0.2s ease; /* Ajouter une transition fluide pour le transform */
+  margin-top: 10px;
+}
+
+.card-img-topic:hover {
+  transform: translate(
+    -50%,
+    -5%
+  ); /* Ajuster pour un effet de survol plus doux */
+}
+
+.paragraph {
+  max-width: 800px;
+  margin: 0 auto; /* Centrer horizontalement */
+  padding: 20px;
+  background-color: #2f3a4b;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.paragraph p {
+  margin: 0 0 20px; /* Espacement entre les paragraphes */
+}
+
+.paragraph ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.paragraph li {
+  margin-bottom: 10px;
+}

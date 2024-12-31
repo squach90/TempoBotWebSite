@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>🔵Tempo Bot🔴</title>
+  </head>
+  <body>
+    <div class="vide"><p>Un projet créer par squach90</p></div>
+    <div class="navbar">
+      <a href="/" class="button">🔵 Tempo Bot 🔴</a>
+      <a href="https://github.com/squach90/TempoBot" class="button"
+        >🌐 GitHub</a
+      >
+      <a href="install.html" class="button" id="install">⬇️ Installer</a>
+    </div>
+    <div class="content" id="landing">
+      <br />
+      <br />
+      <h1 class="title">🔎 En savoir plus</h1>
+      <p class="subtitle">
+        Voici les informations sur Tempo Bot et ses fonctionnalités.
+      </p>
+    </div>
+    <br />
+    <div class="paragraph">
+      <p>
+        TempoBot est un bot conçu pour simplifier la gestion des alertes liées
+        aux jours Tempo d'EDF. Il repose sur des technologies modernes pour
+        offrir des notifications fiables et précises directement sur vos
+        appareils.
+      </p>
+      <p>Les technologies utilisées :</p>
+      <ul>
+        <li>
+          Node.js : La base du bot, pour gérer les appels API et automatiser les
+          tâches avec un code efficace.
+        </li>
+        <li>
+          cron : Une librairie permettant de planifier l’exécution automatique
+          des tâches quotidiennes.
+        </li>
+        <li>
+          API EDF Tempo : Pour récupérer en temps réel les informations sur la
+          couleur des jours Tempo (Bleu, Blanc, Rouge).
+        </li>
+        <li>
+          ntfy.sh : Un service puissant qui permet d'envoyer des notifications
+          instantanées sur vos appareils, via le topic dédié à TempoBot.
+        </li>
+      </ul>
+      <p>Fonctionnement :</p>
+      <ul>
+        <li>
+          Récupération des données : Le bot interroge l’API Tempo d’EDF pour
+          connaître la couleur du jour actuel et celle du lendemain.
+        </li>
+        <li>
+          Formatage des informations : Les données brutes sont traitées et
+          affichées sous un format clair et lisible.
+        </li>
+        <li>
+          Envoi de notifications : Grâce à ntfy.sh, TempoBot vous alerte
+          automatiquement chaque matin sur la couleur du jour Tempo.
+        </li>
+        <li>
+          Automatisation : Le bot fonctionne sans intervention, avec des mises à
+          jour quotidiennes précises.
+        </li>
+      </ul>
+      <p>
+        TempoBot s’exécute en arrière-plan, que ce soit sur un serveur ou
+        directement sur votre appareil, et reste léger pour ne pas consommer
+        beaucoup de ressources. Ses technologies modernes et son architecture
+        simple en font un outil pratique pour tout utilisateur souhaitant
+        optimiser sa consommation d’énergie.
+      </p>
+    </div>
+
+    <footer>
+      <hr />
+      <p>
+        <a href="https://github.com/squach90" class="footer-link">squach90</a
+        >&copy; 2024 TempoBot. Tous droits réservés.
+      </p>
+    </footer>
+  </body>
+</html>
