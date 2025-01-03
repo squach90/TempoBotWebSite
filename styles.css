@@ -87,7 +87,8 @@ footer {
   touch-action: manipulation;
   vertical-align: top;
   white-space: nowrap;
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .button:hover {
@@ -117,7 +118,6 @@ footer {
 .container {
   max-width: fit-content;
   display: inline-grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 8px;
 }
@@ -503,5 +503,173 @@ footer {
   to {
     transform: scale(4);
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .container {
+    display: flex; /* Utiliser flexbox pour la mise en page verticale */
+    flex-direction: column; /* Disposer les éléments en colonne */
+    gap: 8px; /* Espacement entre les éléments */
+  }
+
+  .card,
+  .card-large,
+  .card-2 {
+    width: 100%; /* Prendre toute la largeur disponible */
+    margin: 10px 0; /* Ajuster les marges pour la liste verticale */
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .card-large,
+  .card,
+  .card-2 {
+    width: 280px;
+  }
+
+  .container {
+    display: flex; /* Utiliser flexbox pour la mise en page verticale */
+    flex-direction: column; /* Disposer les éléments en colonne */
+    gap: 0px; /* Espacement entre les éléments */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card-large,
+  .card,
+  .card-2 {
+    width: 280px;
+  }
+
+  .container {
+    display: flex; /* Utiliser flexbox pour la mise en page verticale */
+    flex-direction: column; /* Disposer les éléments en colonne */
+    gap: 0px; /* Espacement entre les éléments */
+  }
+
+  .button {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .github-btn {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+  }
+
+  #install {
+    margin-left: 0;
+  }
+
+  .OS {
+    margin: 10px;
+  }
+
+  .install-card {
+    .description {
+      display: none;
+    }
+    br {
+      display: none;
+    }
+  }
+
+  .container-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .container-wrapper {
+    margin-top: 0px;
+  }
+
+  .content {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card-large {
+    width: 320px;
+  }
+
+  .card {
+    width: 320px;
+    img {
+      width: 68%;
+    }
+  }
+
+  .card-2 {
+    width: 320px;
+  }
+
+  .container {
+    display: flex; /* Utiliser flexbox pour la mise en page verticale */
+    flex-direction: column; /* Disposer les éléments en colonne */
+    gap: 0px; /* Espacement entre les éléments */
+  }
+
+  .button {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .github-btn {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+  }
+
+  #install {
+    margin-left: 0;
+  }
+
+  .OS {
+    margin: 10px;
+  }
+
+  .install-card {
+    /* .description {
+      display: none;
+    } */
+    br {
+      display: none;
+    }
+  }
+
+  .container-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .container-wrapper {
+    margin-top: 0px;
+  }
+
+  .content {
+    margin: 10px;
   }
 }
