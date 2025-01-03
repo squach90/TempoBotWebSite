@@ -673,3 +673,77 @@ footer {
     margin: 10px;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .card-large {
+    width: 320px;
+  }
+
+  .card {
+    width: 320px;
+    img {
+      width: 68%;
+    }
+  }
+
+  .card-2 {
+    width: 320px;
+  }
+
+  .container {
+    display: flex; /* Utiliser flexbox pour la mise en page verticale */
+    flex-direction: column; /* Disposer les éléments en colonne */
+    gap: 0px; /* Espacement entre les éléments */
+  }
+
+  .button {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .github-btn {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+  }
+
+  #install {
+    margin-left: 0;
+  }
+
+  .OS {
+    margin: 10px;
+  }
+
+  .install-card {
+    /* .description {
+      display: none;
+    } */
+    br {
+      display: none;
+    }
+  }
+
+  .container-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .container-wrapper {
+    margin-top: 0px;
+  }
+
+  .content {
+    margin: 10px;
+  }
+}
